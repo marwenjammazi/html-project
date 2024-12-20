@@ -14,6 +14,7 @@
         id="name"
         maxlength="50"
         minlength="3"
+        required
       /><br />
       Prename:<input
         type="text"
@@ -21,9 +22,16 @@
         id="prename"
         maxlength="50"
         minlength="3"
+        required
       /><br />
       Email:<input type="email" placeholder="Email" required /><br />
-      Password:<input type="password" placeholder="Password" required /><br />
+      Password:<input
+        type="password"
+        placeholder="Password"
+        required
+        minlength="6"
+        maxlength="12"
+      /><br />
       Age:<input
         type="number"
         placeholder="age"
@@ -40,7 +48,7 @@
       <textarea maxlength="200" placeholder="your motivation letter"></textarea>
       <br />
       Telephone number:
-      <input type="tel" placeholder="99 888 777" required readonly />
+      <input type="tel" placeholder="99 888 777" readonly />
       <br />
       <br /><br />
       <button type="submit">send</button>
